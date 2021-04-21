@@ -4,10 +4,21 @@
 ## Write a loop that prints the numbers in a nice way, for instance like
 ##  "element 1 = 40".
 
+nums <- 40:50
+count <- 1
+for(i in nums){
+  cat("element",count,"=",i,"\n")
+  count <- count+1
+}
+
 
 ## 2. Create another sequence of numbers and store in a vector.
 ## Write a loop that prints the numbers and their squares in a nice way.
 
+nums2 <- 21:31
+for(i in nums2){
+  cat("number", i,"squared =",i*i,"\n")
+}
 
 ## 3. Store the file names in the current working directory into a vector.
 ## You can get the names using 'list.files()` command (see help for additional information).
